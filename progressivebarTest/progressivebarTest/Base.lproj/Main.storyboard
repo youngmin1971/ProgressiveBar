@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="progressivebarTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZbX-uF-MaU" customClass="SProgressView" customModule="progressivebarTest" customModuleProvider="target">
+                                <rect key="frame" x="10" y="140" width="394" height="26"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="rst-yP-bEv"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                        <real key="value" value="0.40000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="progressTintColor">
+                                        <color key="value" systemColor="systemRedColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="96C-gX-phI">
+                                <rect key="frame" x="355" y="191.5" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ani" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAU-nu-tf8">
+                                <rect key="frame" x="322.5" y="196.5" width="24.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mHD-9a-l7N">
+                                <rect key="frame" x="95" y="190" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Hao-yX-lao"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1so-Af-nsp">
+                                <rect key="frame" x="10" y="192" width="77" height="30"/>
+                                <state key="normal" title="Set 1~100 :"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nal-eS-ZZp">
+                                <rect key="frame" x="360" y="251" width="44" height="30"/>
+                                <state key="normal" title="Action"/>
+                                <connections>
+                                    <action selector="setData" destination="BYZ-38-t0r" eventType="touchUpInside" id="YNl-uq-gp0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1so-Af-nsp" firstAttribute="top" secondItem="ZbX-uF-MaU" secondAttribute="bottom" constant="26" id="EJz-HA-ZMy"/>
+                            <constraint firstItem="96C-gX-phI" firstAttribute="leading" secondItem="FAU-nu-tf8" secondAttribute="trailing" constant="8" symbolic="YES" id="Iu2-RH-Tv3"/>
+                            <constraint firstItem="Nal-eS-ZZp" firstAttribute="top" secondItem="96C-gX-phI" secondAttribute="bottom" constant="28.5" id="LNK-LO-Z6t"/>
+                            <constraint firstItem="FAU-nu-tf8" firstAttribute="centerY" secondItem="mHD-9a-l7N" secondAttribute="centerY" id="WOs-OT-6rH"/>
+                            <constraint firstItem="ZbX-uF-MaU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="96" id="ZtX-bF-d8O"/>
+                            <constraint firstItem="mHD-9a-l7N" firstAttribute="leading" secondItem="1so-Af-nsp" secondAttribute="trailing" constant="8" symbolic="YES" id="dbc-oO-SH4"/>
+                            <constraint firstItem="Nal-eS-ZZp" firstAttribute="trailing" secondItem="96C-gX-phI" secondAttribute="trailing" id="e9v-M7-Wrz"/>
+                            <constraint firstItem="96C-gX-phI" firstAttribute="centerY" secondItem="FAU-nu-tf8" secondAttribute="centerY" id="gBx-wh-xfN"/>
+                            <constraint firstItem="ZbX-uF-MaU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="l3Q-9S-Hjb"/>
+                            <constraint firstItem="1so-Af-nsp" firstAttribute="leading" secondItem="ZbX-uF-MaU" secondAttribute="leading" id="npZ-cO-Thw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZbX-uF-MaU" secondAttribute="trailing" constant="10" id="pgS-Ab-vVd"/>
+                            <constraint firstItem="96C-gX-phI" firstAttribute="trailing" secondItem="ZbX-uF-MaU" secondAttribute="trailing" id="w5H-yI-UM1"/>
+                            <constraint firstItem="1so-Af-nsp" firstAttribute="centerY" secondItem="mHD-9a-l7N" secondAttribute="centerY" id="y7k-SK-7KS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animationOnOff" destination="96C-gX-phI" id="xdo-2m-60f"/>
+                        <outlet property="progressbar" destination="ZbX-uF-MaU" id="acd-2I-WeK"/>
+                        <outlet property="rate" destination="mHD-9a-l7N" id="3Wq-0L-QRi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="95.652173913043484" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

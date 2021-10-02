@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZbX-uF-MaU" customClass="SProgressView" customModule="progressivebarTest" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZbX-uF-MaU" customClass="SProgressView" customModule="progressivebarTest" customModuleProvider="target">
                                 <rect key="frame" x="10" y="140" width="394" height="26"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -62,10 +62,27 @@
                                     <action selector="setData" destination="BYZ-38-t0r" eventType="touchUpInside" id="YNl-uq-gp0"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbJ-dv-EHA" customClass="RateProgressBar" customModule="progressivebarTest" customModuleProvider="target">
+                                <rect key="frame" x="20" y="304" width="242" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="242" id="9ix-XT-RmZ"/>
+                                    <constraint firstAttribute="height" constant="40" id="jeN-oU-sKc"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rate0to1">
+                                        <real key="value" value="0.32000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="star"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="grayImageName" value="starback"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="hbJ-dv-EHA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2Qm-RR-qk6"/>
+                            <constraint firstItem="hbJ-dv-EHA" firstAttribute="top" secondItem="Nal-eS-ZZp" secondAttribute="bottom" constant="23" id="7q9-ZI-9aO"/>
                             <constraint firstItem="1so-Af-nsp" firstAttribute="top" secondItem="ZbX-uF-MaU" secondAttribute="bottom" constant="26" id="EJz-HA-ZMy"/>
                             <constraint firstItem="96C-gX-phI" firstAttribute="leading" secondItem="FAU-nu-tf8" secondAttribute="trailing" constant="8" symbolic="YES" id="Iu2-RH-Tv3"/>
                             <constraint firstItem="Nal-eS-ZZp" firstAttribute="top" secondItem="96C-gX-phI" secondAttribute="bottom" constant="28.5" id="LNK-LO-Z6t"/>

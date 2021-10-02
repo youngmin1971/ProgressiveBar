@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53A69B5E270861D400F5AF44 /* RateProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A69B5D270861D400F5AF44 /* RateProgressBar.swift */; };
 		53CFFE76270434C4005F08CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CFFE75270434C4005F08CE /* AppDelegate.swift */; };
 		53CFFE78270434C4005F08CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CFFE77270434C4005F08CE /* SceneDelegate.swift */; };
 		53CFFE7A270434C4005F08CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CFFE79270434C4005F08CE /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		53A69B5D270861D400F5AF44 /* RateProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateProgressBar.swift; sourceTree = "<group>"; };
 		53CFFE72270434C4005F08CE /* progressivebarTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = progressivebarTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53CFFE75270434C4005F08CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53CFFE77270434C4005F08CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				53CFFE7E270434C5005F08CE /* Assets.xcassets */,
 				53CFFE80270434C5005F08CE /* LaunchScreen.storyboard */,
 				53CFFE8E270436C3005F08CE /* SProgressView.swift */,
+				53A69B5D270861D400F5AF44 /* RateProgressBar.swift */,
 				53CFFE83270434C5005F08CE /* Info.plist */,
 			);
 			path = progressivebarTest;
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53CFFE7A270434C4005F08CE /* ViewController.swift in Sources */,
+				53A69B5E270861D400F5AF44 /* RateProgressBar.swift in Sources */,
 				53CFFE8F270436C3005F08CE /* SProgressView.swift in Sources */,
 				53CFFE76270434C4005F08CE /* AppDelegate.swift in Sources */,
 				53CFFE78270434C4005F08CE /* SceneDelegate.swift in Sources */,

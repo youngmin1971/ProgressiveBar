@@ -44,6 +44,21 @@ import UIKit
         }
     }
     
+    //MARK:- Initializing
+    required override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.clipsToBounds = true  // must be clipToBounds for round edge with small number of rate
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+    
+    override public func awakeFromNib() {
+        self.clipsToBounds = true
+    }
+    
+    
     private let animationBarView = UIView()
     
     override public func draw(_ rect: CGRect)

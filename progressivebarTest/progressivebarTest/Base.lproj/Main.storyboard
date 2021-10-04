@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZbX-uF-MaU" customClass="SProgressView" customModule="progressivebarTest" customModuleProvider="target">
-                                <rect key="frame" x="10" y="140" width="394" height="26"/>
+                                <rect key="frame" x="10" y="140" width="394" height="15"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="26" id="rst-yP-bEv"/>
+                                    <constraint firstAttribute="height" constant="15" id="rst-yP-bEv"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
@@ -35,16 +35,16 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="96C-gX-phI">
-                                <rect key="frame" x="355" y="191.5" width="51" height="31"/>
+                                <rect key="frame" x="355" y="180.5" width="51" height="31"/>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ani" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAU-nu-tf8">
-                                <rect key="frame" x="322.5" y="196.5" width="24.5" height="21"/>
+                                <rect key="frame" x="322.5" y="185.5" width="24.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mHD-9a-l7N">
-                                <rect key="frame" x="95" y="190" width="100" height="34"/>
+                                <rect key="frame" x="95" y="179" width="100" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="Hao-yX-lao"/>
                                 </constraints>
@@ -52,18 +52,18 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1so-Af-nsp">
-                                <rect key="frame" x="10" y="192" width="77" height="30"/>
+                                <rect key="frame" x="10" y="181" width="77" height="30"/>
                                 <state key="normal" title="Set 1~100 :"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nal-eS-ZZp">
-                                <rect key="frame" x="360" y="251" width="44" height="30"/>
+                                <rect key="frame" x="360" y="240" width="44" height="30"/>
                                 <state key="normal" title="Action"/>
                                 <connections>
                                     <action selector="setData" destination="BYZ-38-t0r" eventType="touchUpInside" id="YNl-uq-gp0"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbJ-dv-EHA" customClass="RateProgressBar" customModule="progressivebarTest" customModuleProvider="target">
-                                <rect key="frame" x="20" y="304" width="242" height="40"/>
+                                <rect key="frame" x="20" y="293" width="242" height="40"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="242" id="9ix-XT-RmZ"/>

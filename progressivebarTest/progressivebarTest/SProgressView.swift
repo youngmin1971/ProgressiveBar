@@ -76,13 +76,6 @@ import UIKit
             context.closePath()
             context.fillPath()
             
-            let barRect = CGRect(x: rect.origin.x, y: rect.origin.y, width: rect.width * progress, height: rect.height)
-            let barPath = UIBezierPath(roundedRect: barRect, cornerRadius: cornerRadius).cgPath
-            context.addPath(barPath)
-            context.setFillColor(progressTintColor.cgColor)
-            context.closePath()
-            context.fillPath()
-            
             if lineWidth > 0 {
                 let lineRect = rect.insetBy(dx: lineWidth / 2, dy: lineWidth / 2)
                 let linePath = UIBezierPath(roundedRect: lineRect, cornerRadius: cornerRadius).cgPath
@@ -91,6 +84,13 @@ import UIKit
                 context.closePath()
                 context.strokePath()
             }
+            let xOffset = rect.width - (rect.width * progress)
+            let barRect = CGRect(x: -xOffset, y: rect.origin.y, width: rect.width, height: rect.height)
+            let barPath = UIBezierPath(roundedRect: barRect, cornerRadius: cornerRadius).cgPath
+            context.addPath(barPath)
+            context.setFillColor(progressTintColor.cgColor)
+            context.closePath()
+            context.fillPath()
         }
     }
     
@@ -98,17 +98,15 @@ import UIKit
         if animated {
             addSubview(animationBarView)
             animationBarView.backgroundColor = progressTintColor
-            animationBarView.layer.cornerRadius = (layer.cornerRadius - lineWidth)
+            animationBarView.layer.cornerRadius = layer.cornerRadius
             animationBarView.isHidden = false
-            animationBarView.frame = CGRect(x: lineWidth, y: lineWidth, width: 0, height: frame.height - (lineWidth * 2))
+            animationBarView.frame = CGRect(x: -frame.width, y: 0, width: frame.width, height: frame.height)
                                         
             self.progress = 0
             
             UIView.animate(withDuration:0.3, delay:0, options: [.curveLinear], animations: {
-                
-                self.animationBarView.frame = CGRect(x: self.lineWidth, y: self.lineWidth,
-                                                     width: (self.frame.width * progress) - (self.lineWidth * 2),
-                                                     height: self.frame.height - (self.lineWidth * 2))
+                let xOffset = self.frame.width - (self.frame.width * progress)
+                self.animationBarView.frame = CGRect(x: -xOffset, y: 0, width: self.frame.width, height: self.frame.height)
             }, completion: { finishied in
                 self.animationBarView.isHidden = true
                 self.progress = progress

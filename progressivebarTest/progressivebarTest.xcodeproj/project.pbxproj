@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		532A67D1270D8E29004EF2CB /* SButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532A67D0270D8E29004EF2CB /* SButton.swift */; };
 		53A69B5E270861D400F5AF44 /* RateProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A69B5D270861D400F5AF44 /* RateProgressBar.swift */; };
 		53CFFE76270434C4005F08CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CFFE75270434C4005F08CE /* AppDelegate.swift */; };
 		53CFFE78270434C4005F08CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CFFE77270434C4005F08CE /* SceneDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		532A67D0270D8E29004EF2CB /* SButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SButton.swift; sourceTree = "<group>"; };
 		53A69B5D270861D400F5AF44 /* RateProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateProgressBar.swift; sourceTree = "<group>"; };
 		53CFFE72270434C4005F08CE /* progressivebarTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = progressivebarTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53CFFE75270434C4005F08CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				53CFFE80270434C5005F08CE /* LaunchScreen.storyboard */,
 				53CFFE8E270436C3005F08CE /* SProgressView.swift */,
 				53A69B5D270861D400F5AF44 /* RateProgressBar.swift */,
+				532A67D0270D8E29004EF2CB /* SButton.swift */,
 				53CFFE83270434C5005F08CE /* Info.plist */,
 			);
 			path = progressivebarTest;
@@ -148,6 +151,7 @@
 				53CFFE8F270436C3005F08CE /* SProgressView.swift in Sources */,
 				53CFFE76270434C4005F08CE /* AppDelegate.swift in Sources */,
 				53CFFE78270434C4005F08CE /* SceneDelegate.swift in Sources */,
+				532A67D1270D8E29004EF2CB /* SButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZbX-uF-MaU" customClass="SProgressView" customModule="progressivebarTest" customModuleProvider="target">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZbX-uF-MaU" customClass="SProgressView" customModule="progressivebarTest" customModuleProvider="target">
                                 <rect key="frame" x="10" y="140" width="394" height="15"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -24,7 +24,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
-                                        <real key="value" value="2"/>
+                                        <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="progress">
                                         <real key="value" value="0.40000000000000002"/>
@@ -56,7 +56,7 @@
                                 <state key="normal" title="Set 1~100 :"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nal-eS-ZZp">
-                                <rect key="frame" x="360" y="240" width="44" height="30"/>
+                                <rect key="frame" x="355" y="240" width="49" height="30"/>
                                 <state key="normal" title="Action"/>
                                 <connections>
                                     <action selector="setData" destination="BYZ-38-t0r" eventType="touchUpInside" id="YNl-uq-gp0"/>
@@ -77,6 +77,22 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="grayImageName" value="starback"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vd3-SL-5L6" customClass="SButton" customModule="progressivebarTest" customModuleProvider="target">
+                                <rect key="frame" x="73" y="450" width="169" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="defaultBackgroundColor">
+                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -91,9 +107,11 @@
                             <constraint firstItem="mHD-9a-l7N" firstAttribute="leading" secondItem="1so-Af-nsp" secondAttribute="trailing" constant="8" symbolic="YES" id="dbc-oO-SH4"/>
                             <constraint firstItem="Nal-eS-ZZp" firstAttribute="trailing" secondItem="96C-gX-phI" secondAttribute="trailing" id="e9v-M7-Wrz"/>
                             <constraint firstItem="96C-gX-phI" firstAttribute="centerY" secondItem="FAU-nu-tf8" secondAttribute="centerY" id="gBx-wh-xfN"/>
+                            <constraint firstItem="FAU-nu-tf8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mHD-9a-l7N" secondAttribute="trailing" constant="8" symbolic="YES" id="h1s-Qi-iME"/>
                             <constraint firstItem="ZbX-uF-MaU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="l3Q-9S-Hjb"/>
                             <constraint firstItem="1so-Af-nsp" firstAttribute="leading" secondItem="ZbX-uF-MaU" secondAttribute="leading" id="npZ-cO-Thw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZbX-uF-MaU" secondAttribute="trailing" constant="10" id="pgS-Ab-vVd"/>
+                            <constraint firstItem="Nal-eS-ZZp" firstAttribute="leading" secondItem="96C-gX-phI" secondAttribute="leading" id="pri-T4-11h"/>
                             <constraint firstItem="96C-gX-phI" firstAttribute="trailing" secondItem="ZbX-uF-MaU" secondAttribute="trailing" id="w5H-yI-UM1"/>
                             <constraint firstItem="1so-Af-nsp" firstAttribute="centerY" secondItem="mHD-9a-l7N" secondAttribute="centerY" id="y7k-SK-7KS"/>
                         </constraints>
@@ -109,6 +127,11 @@
             <point key="canvasLocation" x="95.652173913043484" y="93.75"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="vd3-SL-5L6">
+            <size key="intrinsicContentSize" width="46" height="18"/>
+        </designable>
+    </designables>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
